@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap" rel="stylesheet">
+    <title>BASE</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .computeraritcle,
+        .computerheader {
+            display: none;
+        }
+
+        .mobileheader,
+        .mobilearticle {
+            display: none;
+        }
+
+        @media only screen and (min-width:1024px) {
+
+            .computerheader {
+                background-color: #dfc5c5;
+                display: flex;
+                flex-direction: row;
+                width: 100vw;
+            }
+
+            .computerheader h3 {
+                /* display: inline-block; */
+                margin-top: 1px;
+                margin-bottom: 0px;
+                font-family: 'Reggae One', cursive;
+                font-size: 55px;
+            }
+
+            .logo {
+                margin: 10px;
+                height: 70px;
+            }
+
+            .computeraritcle {
+                display: flex;
+                flex-direction: row-reverse;
+            }
+
+            .wardrobe {
+                width: 50vw;
+                height: 100vh;
+            }
+
+            .soon {
+                width: 50vw;
+                height: 361.6 px;
+                background-color: #c2a5a5;
+                color: #ffdee3;
+                font-size: 50px;
+                text-align: center;
+                padding-top: 50px;
+            }
+
+            .soon p {
+                color: black;
+                text-align: center;
+                font-size: 25px;
+                padding: 10px;
+                padding-bottom: 0px;
+            }
+
+            .search {
+                background-color: #ffdee3;
+                width: 245px;
+                border-radius: 28px;
+                border: 2px solid black;
+                text-align: center;
+            }
+
+            .button {
+                font-size: 10px;
+            }
+        }
+
+        @media only screen and (max-width:1024px) {
+            .mobileheader {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: #dfc5c5;
+                padding-bottom: 7px;
+            }
+
+            .mobileheader .logo {
+                width: 63px;
+            }
+
+            .mobileheader h3 {
+                font-family: 'Reggae One', cursive;
+                padding-left: 20px;
+            }
+
+            .mobilearticle {
+                display: flex;
+                flex-direction: column;
+
+            }
+
+            .mobilearticle .wardrobe {
+                width: 100vw;
+            }
+            .soon{
+                padding:10px;
+                background-color: #c2a5a5;
+                color: #ffdee3;
+                font-size: 30px;
+                text-align: center;
+            }
+            .soon p {
+                color: black;
+                text-align: center;
+                font-size: 25px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FOR COMPUTER -->
+    <div class="computerheader">
+        <img src="/shield-308943_1280.png" alt="BASE" class="logo">
+        <h3>BASE APPAREL</h3>
+    </div>
+    <div class="computeraritcle">
+        <img src="/blouse-2597205_1920.jpg" alt="" class="wardrobe">
+        <div class="soon">
+            <h3></h3> WE'R COMING SOON!</h3>
+            <p>Hello fellow shoppers! We're currently building our new fashion store.Add your email below to stay
+                up-to-date with anouncements and our launch dates.</p>
+            <input type="email" class="search">
+            <button>ENTER</button>
+        </div>
+    </div>
+
+    <!-- FOR MOBILE -->
+    <div class="mobileheader">
+        <img src="/shield-308943_1280.png" alt="" class="logo">
+        <h3>BASE APPAREL</h3>
+    </div>
+    <div class="mobilearticle">
+        <img src="/blouse-2597205_1920.jpg" alt="" class="wardrobe">
+        <div class="soon">
+            <h3></h3> WE'R COMING SOON!</h3>
+            <p>Hello fellow shoppers! We're currently building our new fashion store.Add your email below to stay
+                up-to-date with anouncements and our launch dates.</p>
+            <input type="email" class="search">
+            <button>ENTER</button>
+        </div>
+    </div>
+</body>
+
+</html>
